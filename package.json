@@ -1,0 +1,8 @@
+{
+  "name": "fastify-vite-examples",
+  "version": "1.0.0",
+  "description": "Set of examples of usage of @fastify/vite (using typescript) and a set of use cases",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
