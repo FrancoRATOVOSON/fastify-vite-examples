@@ -1,0 +1,14 @@
+{
+  "$schema": "https://swc.rs/schema.json",
+  "module": {
+    "type": "es6"
+  },
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": false,
+      "dynamicImport": false
+    }
+  }
+}

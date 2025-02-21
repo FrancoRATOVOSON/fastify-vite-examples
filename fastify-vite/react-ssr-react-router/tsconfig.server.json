@@ -1,0 +1,23 @@
+{
+  "include": ["server/**/*.ts"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "lib": [
+      "ESNext"
+    ],
+    "target": "ES2023",
+    "module": "Preserve",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "newLine": "lf",
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true
+  }
+}
