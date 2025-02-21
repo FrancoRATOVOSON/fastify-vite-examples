@@ -2,7 +2,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { join } from 'node:path';
-import viteReact from '@vitejs/plugin-react'
+import viteReact from '@vitejs/plugin-react-swc'
 
 // There is no type definition yet for vite-fastify
 // @ts-ignore

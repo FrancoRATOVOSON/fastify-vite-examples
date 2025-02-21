@@ -5,7 +5,11 @@ import { fileURLToPath } from "node:url";
 
 async function main() {
   const server = fastify({
-    logger: true
+    logger: {
+      transport: {
+        target: "@fastify/one-line-logger",
+      },
+    }
   })
 
   await server.register(fastifyVite, {
