@@ -2,6 +2,7 @@ import fastifyVite from "@fastify/vite";
 import fastify from "fastify";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import renderer from "./plugins/vite/renderer.js"
 
 async function main() {
   const server = fastify({
@@ -15,7 +16,8 @@ async function main() {
   await server.register(fastifyVite, {
     root: path.resolve(import.meta.dirname,'../'),
     dev: process.argv.includes('--dev'),
-    spa: true
+    // @ts-expect-error
+    renderer
   })
 
   server.get('/', (req,reply) => {

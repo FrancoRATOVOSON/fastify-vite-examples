@@ -10,9 +10,5 @@ import { viteFastify } from '@fastify/vite/plugin'
 
 export default defineConfig(() => ({
   root: join(import.meta.dirname, 'client'),
-  plugins: [tailwindcss(), viteFastify(), viteReact(), tsconfigPaths()],
-  build: {
-    emptyOutDir: true,
-    outDir: join(import.meta.dirname, 'dist/client'),
-  },
+  plugins: [tailwindcss(), viteFastify(), viteReact(), tsconfigPaths()]
 }));

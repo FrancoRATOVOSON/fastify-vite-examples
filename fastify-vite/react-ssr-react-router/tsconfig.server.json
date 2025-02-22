@@ -5,19 +5,20 @@
     "lib": [
       "ESNext"
     ],
-    "target": "ES2023",
-    "module": "Preserve",
-    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
     "esModuleInterop": true,
     "strict": true,
     "resolveJsonModule": true,
     "removeComments": true,
-    "newLine": "lf",
     "noUnusedLocals": true,
     "noFallthroughCasesInSwitch": true,
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
+    "noImplicitAny": true,
+    "outDir": "dist",
   }
 }

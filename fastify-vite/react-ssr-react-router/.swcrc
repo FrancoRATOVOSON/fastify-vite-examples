@@ -1,7 +1,8 @@
 {
   "$schema": "https://swc.rs/schema.json",
   "module": {
-    "type": "es6"
+    "type": "es6",
+    "resolveFully": true
   },
   "jsc": {
     "parser": {
@@ -9,6 +10,7 @@
       "tsx": false,
       "decorators": false,
       "dynamicImport": false
-    }
+    },
+    "target": "es2020"
   }
 }
